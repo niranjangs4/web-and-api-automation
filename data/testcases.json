@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tc_TA_1284_001",
+    "title": "Verify API health endpoint returns success",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "High",
+    "steps": ["Call health endpoint", "Validate success status"],
+    "expected_result": "Health endpoint returns a successful response"
+  },
+  {
+    "id": "tc_TA_1284_002",
+    "title": "Verify unauthorized API request is rejected",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "High",
+    "steps": ["Call protected API without token", "Validate rejection"],
+    "expected_result": "API returns unauthorized or forbidden response"
+  },
+  {
+    "id": "tc_TA_1284_003",
+    "title": "Verify required field validation",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "Medium",
+    "steps": ["Submit payload with missing required field", "Validate validation error"],
+    "expected_result": "API returns validation error with field details"
+  },
+  {
+    "id": "tc_TA_1284_004",
+    "title": "Verify invalid field type validation",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "Medium",
+    "steps": ["Submit payload with invalid data type", "Validate validation error"],
+    "expected_result": "API rejects invalid data type"
+  },
+  {
+    "id": "tc_TA_1284_005",
+    "title": "Verify pagination response shape",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "Medium",
+    "steps": ["Call list endpoint with pagination", "Validate pagination metadata"],
+    "expected_result": "Response includes items and pagination metadata"
+  },
+  {
+    "id": "tc_TA_1284_006",
+    "title": "Verify idempotent retry behavior",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "High",
+    "steps": ["Send same idempotency key twice", "Validate duplicate side effects are prevented"],
+    "expected_result": "Second request does not create duplicate resource"
+  },
+  {
+    "id": "tc_TA_1284_007",
+    "title": "Verify rate limit response handling",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "Low",
+    "steps": ["Simulate rate limit response", "Validate retry-after metadata"],
+    "expected_result": "Client receives rate-limit response with retry guidance"
+  },
+  {
+    "id": "tc_TA_1284_008",
+    "title": "Verify audit correlation id is returned",
+    "module": "API",
+    "issue_key": "TA-1284",
+    "priority": "High",
+    "steps": ["Send request with correlation id", "Validate response/audit correlation"],
+    "expected_result": "Correlation id is preserved for traceability"
+  },
+  {
+    "id": "tc_TA_1284_009",
+    "title": "Verify report artifact metadata",
+    "module": "Reports",
+    "issue_key": "TA-1284",
+    "priority": "Medium",
+    "steps": ["Trigger report generation", "Validate artifact metadata"],
+    "expected_result": "Report includes JSON, HTML, JUnit, and logs metadata"
+  },
+  {
+    "id": "tc_TA_1284_010",
+    "title": "Verify failed execution blocks publishing",
+    "module": "Publishing",
+    "issue_key": "TA-1284",
+    "priority": "Critical",
+    "steps": ["Simulate failed execution", "Attempt remote publish"],
+    "expected_result": "Remote publish is skipped until execution passes"
+  }
+]

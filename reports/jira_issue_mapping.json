@@ -1,0 +1,12 @@
+[
+  {"testcase_id": "tc_TA_1284_001", "jira_issue": "TA-12"},
+  {"testcase_id": "tc_TA_1284_002", "jira_issue": "TA-13"},
+  {"testcase_id": "tc_TA_1284_003", "jira_issue": "TA-14"},
+  {"testcase_id": "tc_TA_1284_004", "jira_issue": "TA-15"},
+  {"testcase_id": "tc_TA_1284_005", "jira_issue": "TA-16"},
+  {"testcase_id": "tc_TA_1284_006", "jira_issue": "TA-17"},
+  {"testcase_id": "tc_TA_1284_007", "jira_issue": "TA-18"},
+  {"testcase_id": "tc_TA_1284_008", "jira_issue": "TA-19"},
+  {"testcase_id": "tc_TA_1284_009", "jira_issue": "TA-20"},
+  {"testcase_id": "tc_TA_1284_010", "jira_issue": "TA-21"}
+]
